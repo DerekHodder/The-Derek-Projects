@@ -1,0 +1,112 @@
+almond
+apple
+apricot
+artichoke
+asparagus
+avocado
+bacon
+banana
+basil
+beef
+blackberry
+blueberry
+bread
+broccoli
+butter
+cabbage
+cantaloupe
+carrot
+cashew
+cauliflower
+celery
+cheese
+cherry
+chicken
+chocolate
+cinnamon
+clove
+coconut
+coconut oil
+corn
+corn starch
+couscous
+crab
+cream cheese
+cucumber
+dill
+egg
+eggplant
+flour
+garlic
+ginger
+grape
+grapefruit
+guava
+honey
+kale
+ketchup
+kiwi
+lamb
+leek
+lemon
+lettuce
+lime
+lobster
+mango
+mayonnaise
+melon
+milk
+mushroom
+mustard
+mutton
+nutmeg
+olive
+olive oil
+onion
+orange
+oregano
+paprika
+pasta
+pea
+peach
+peanut
+peanut butter
+peanut oil
+pear
+pecan
+pepper
+pepperoni
+pickle
+pineapple
+pistachio
+pomegranate
+pork
+potato
+pumpkin
+raisin
+raspberry
+rhubarb
+rice
+rosemary
+salmon
+salt
+sesame oil
+shrimp
+sour cream
+soy sauce
+spinach
+strawberry
+sugar
+thyme
+tilapia
+tofu
+tomato
+tuna
+turkey
+vanilla
+vegetable oil
+vinegar
+walnut
+water
+watermelon
+yogurt

@@ -1,0 +1,93 @@
+/*
+-----------------------------------------------
+TFG/static/TrueFalseGameCSS.css
+Derek Stephens
+2023 September 9
+-----------------------------------------------
+*/
+
+body {
+	background-color: rgb(0, 0, 0);
+	margin: 0;
+}
+
+#header {
+	height: 15vh;
+}
+
+#scorecontainer {
+	float: left;
+}
+
+#scorecontainer:hover {
+	background-color: rgb(50, 50, 50);
+}
+
+#score {
+	color: rgb(0, 255, 65);
+	font-family: monospace;
+	font-size: 5vw;
+	line-height: 0.8;
+	margin: 0;
+	text-align: center;
+}
+
+#challengemode {
+	color: rgb(0, 255, 65);
+	float: right;
+	font-family: monospace;
+	font-size: 2vw;
+}
+
+#challengemode:hover {
+	background-color: rgb(50, 50, 50);
+}
+
+#promptdiv {
+	color: rgb(0, 255, 65);
+	font-family: monospace;
+	font-size: 3vw;
+	margin-bottom: 15vh;
+	margin-top: 30vh;
+	text-align: center;
+}
+
+#optionscontainer {
+	left: 50%;
+	position: relative;
+	text-align: center;
+	transform: translate(-50%, 0);
+}
+
+.optionbutton {
+	background-color: rgb(0, 0, 0);
+	border: 1px solid rgb(0, 255, 65);
+	color: rgb(0, 255, 65);
+	display:inline-block;
+	font-family: monospace;
+	font-size: 5vw;
+	text-decoration: none;
+}
+
+.optionbutton:hover {
+	background-color: rgb(50, 50, 50);
+}
+
+#truebutton {
+
+}
+
+#falsebutton {
+
+}
+
+#homelink {
+	bottom: 1vh;
+	position: fixed;
+	right: 1vw;
+}
+
+#homeicon {
+	filter: invert(0.6) sepia(.5) hue-rotate(50deg) saturate(1000%) brightness(130%);
+	height: 10vh;
+}

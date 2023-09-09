@@ -1,0 +1,49 @@
+<!--
+	-------------------------------------------
+	W2T/templates/Word2TasteHTML.html
+	Derek Stephens
+	2023 September 9
+	-------------------------------------------
+
+	Converts any English word into a list of ingredients.
+
+-->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>The Derek Projects</title>
+	<link rel="icon" href="{% static 'w2t_favicon.png' %}">
+	<link rel="stylesheet" href="{% static 'Word2TasteCSS.css' %}">
+</head>
+
+<body>
+	{% csrf_token %}
+	<div id="title">
+		Word2Taste
+	</div>
+	<div id="description">
+		Convert any word to a list of delicious ingredients!
+	</div>
+	<input id="inputbox" placeholder="Choose a word, any word...">
+	<button id="submitbutton">
+		Go!
+	</button>
+	<div id="outputheader">
+	</div>
+	<ol id="outputlist">
+	</ol>
+	<a id="homelink" href="/">
+		<img id="homeicon" src="{% static 'w2t_home_icon.png' %}">
+	</a>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="{% static 'Word2TasteJS.js' %}"></script>
+</body>
+
+</html>

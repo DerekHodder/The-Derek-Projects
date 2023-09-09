@@ -1,0 +1,84 @@
+/*
+-----------------------------------------------
+WAR/static/WarCSS.css
+Derek Stephens
+2023 September 9
+-----------------------------------------------
+*/
+
+body {
+	background-color: rgb(241, 241, 245);
+	margin: 0;
+}
+
+#title {
+	font-size: min(5vw, 10vh);
+	margin-bottom: 2vh;
+	text-align: center;
+}
+
+#speedslider {
+	appearance: none;
+	background-color: rgb(216, 216, 216);
+	height: 3vh;
+	left: 50%;
+	position: relative;
+	transform: translate(-50%, 0);
+	width: 10vw;
+}
+
+#speedslider::-webkit-slider-thumb {
+	appearance: none;
+	background-color: rgb(49, 49, 136);
+	height: 3vh;
+	width: 3vh;
+}
+
+#speedlabel {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#battlegrid {
+	display: grid;
+	height: min(60vw, 60vh);
+	left: 50%;
+	margin-bottom: 2vh;
+	margin-top: 2vh;
+	position: relative;
+	transform: translate(-50%, 0);
+	width: min(60vw, 60vh);
+}
+
+.gridpixel {
+
+}
+
+#fightbutton {
+	background-color: rgb(49, 49, 136);
+	border: 0;
+	border-radius: 50%;
+	color: rgb(240, 240, 234);
+	font-size: 3vh;
+	height: 13vh;
+	left: 50%;
+	position: relative;
+	transform: translate(-50%, 0);
+	width: 13vh;
+}
+
+#victorylabel {
+	font-family: sans-serif;
+	font-size: 10vh;
+	text-align: center;
+}
+
+#homelink {
+	bottom: 1vh;
+	position: fixed;
+	right: 1vw;
+}
+
+#homeicon {
+	height: 10vh;
+}

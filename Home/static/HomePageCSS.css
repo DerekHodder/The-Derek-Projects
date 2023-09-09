@@ -1,0 +1,115 @@
+/*
+-----------------------------------------------
+Home/static/HomePageCSS.css
+Derek Stephens
+2023 September 9
+-----------------------------------------------
+*/
+
+#page {
+	margin: 0px;
+}
+
+#header { 
+	line-height: 0px;
+	height: 80vh;
+}
+
+#headerimage {
+	filter: brightness(0.3);
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+#headertext {
+	color: rgb(255, 255, 255);
+	font-family: sans-serif;
+	font-size: min(20vw, 20vh);
+	left: 10vw;
+	line-height: normal;
+	position: absolute;
+	top: 4vh;
+	width: min(80vw, 80vh);
+}
+
+#downiconcontainer {
+	background-color: rgb(0, 0, 0);
+	font-size: 0;
+}
+
+#downicon {
+	left: 50%;
+	max-height: 20vh;
+	position: relative;
+	transform: translate(-50%, 0);
+}
+
+#descriptioncontainer {
+	background-color: rgb(0, 0, 0);
+	height: 200vh;
+	position: relative;
+}
+
+#description {
+	color: rgb(255, 255, 255);
+	font-family: sans-serif;
+	font-size: 2vw;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#projectsgrid {
+	background-color: rgb(0, 0, 0);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.project {
+	aspect-ratio: 2/1;
+	line-height: 0px;
+	position: relative;
+}
+
+.project:hover {
+	filter: brightness(0.85);
+}
+
+.projectimage {
+	border-radius: 5px;
+	filter: brightness(0.5);
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	width: 100%;
+}
+
+.projecttext {
+	color: rgb(255, 255, 255);
+	font-family: monospace;
+	font-size: 6vw;
+	left: 50%;
+	line-height: normal;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#socialsbar {
+	background-color: rgb(0, 0, 0);
+	text-align: center
+}
+
+.sociallink {
+	display: inline-block;
+	margin: 5px;
+	text-decoration: none;
+}
+
+.socialicon {
+	height: 40px;
+}

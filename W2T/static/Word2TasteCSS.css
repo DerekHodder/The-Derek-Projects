@@ -1,0 +1,50 @@
+/*
+-----------------------------------------------
+W2T/static/Word2TasteCSS.css
+Derek Stephens
+2023 September 9
+-----------------------------------------------
+*/
+
+body {
+	background-color: rgb(223, 225, 240);
+	margin: 0;
+	margin-left: 1vw;
+}
+
+#title {
+	font-family: monospace;
+	font-size: min(8vw, 10vh);
+}
+
+#description {
+	font-family: monospace;
+	font-size: min(3vw, 4vh);
+}
+
+#inputbox {
+	margin-bottom: 2vh;
+	margin-top: 2vh;
+}
+
+#submitbutton {
+	
+}
+
+#outputheader {
+	font-family: monospace;
+}
+
+#outputlist {
+	font-family: monospace;
+}
+
+#homelink {
+	bottom: 1vh;
+	position: fixed;
+	right: 1vw;
+}
+
+#homeicon {
+	height: 10vh;
+}

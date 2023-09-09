@@ -1,0 +1,47 @@
+<!--
+	-------------------------------------------
+	UNX/templates/UnixTimeHTML.html
+	Derek Stephens
+	2023 September 9
+	-------------------------------------------
+
+	Displays mathematical properties of the current unix time in seconds.
+
+-->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>The Derek Projects</title>
+	<link rel="icon" href="{% static 'unx_favicon.png' %}">
+	<link rel="stylesheet" href="{% static 'UnixTimeCSS.css' %}">
+</head>
+
+<body>
+	{% csrf_token %}
+	<div id="info">
+		<div id="timeheader">
+			Current Unix Time is...
+		</div>
+		<div id="time">
+		</div>
+		<div id="listheader">
+			which is...
+		</div>
+	</div>
+	<ul id="list">
+	</ul>
+	<a id="homelink" href="/">
+		<img id="homeicon" src="{% static 'unx_home_icon.png' %}">
+	</a>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="{% static 'UnixTimeJS.js' %}"></script>
+</body>
+
+</html>

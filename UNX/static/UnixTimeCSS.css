@@ -1,0 +1,54 @@
+/*
+-----------------------------------------------
+UNX/static/UnixTimeCSS.css
+Derek Stephens
+2023 September 9
+-----------------------------------------------
+*/
+
+body {
+	background-color: rgb(249, 248, 235);
+	margin: 0;
+}
+
+#info {
+	background-color: rgb(249, 248, 235);
+	padding-bottom: 2vh;
+	position: sticky;
+	top: 0;
+}
+
+#timeheader {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#time {
+	font-size: 10vh;
+	font-weight: bold;
+	text-align: center;
+}
+
+#listheader {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#list {
+	font-family: sans-serif;
+	font-size: 5vh;
+	list-style-type: none;
+	margin-top: 0;
+	padding-left: 0;
+	text-align: center;
+}
+
+#homelink {
+	bottom: 1vh;
+	position: fixed;
+	right: 1vw;
+}
+
+#homeicon {
+	height: 10vh;
+}

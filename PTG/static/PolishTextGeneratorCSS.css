@@ -1,0 +1,184 @@
+/*
+-----------------------------------------------
+PTG/static/PolishTextGeneratorCSS.css
+Derek Stephens
+2023 September 9
+-----------------------------------------------
+*/
+
+body {
+	background-color: hsl(353, 12%, 87%); /* rgb(212, 33, 60) */
+	margin: 0;
+}
+
+#title {
+	text-align: center;
+}
+
+.titleicon {
+	content: url("poland_flag.png");
+	width: min(6vw, 8vh);
+}
+
+#titletext {
+	display: inline;
+	font-family: sans-serif;
+	font-size: min(8vw, 10vh);
+}
+
+#description {
+	font-family: sans-serif;
+	font-size: min(3vw, 4vh);
+	margin-bottom: 10vh;
+	text-align: center;
+}
+
+#generationgrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 5vh;
+	margin-top: 10vh;
+}
+
+#configurationbox {
+	border-right-style: solid;
+	border-right-width: 2px;
+}
+
+#configurationsubtitle {
+    font-family: sans-serif;
+	font-size: max(5vh, 16px);
+	text-align: center;
+}
+
+#lengthcontainer {
+	left: 50%;
+	margin-bottom: 10vh;
+    margin-top: 5vh;
+	position: relative;
+	transform: translate(-50%, 0);
+	width: 40vw;
+}
+
+#lengthheader {
+    font-family: sans-serif;
+}
+
+#lengthslider {
+	appearance: none;
+	background-image: linear-gradient(90deg, hsl(353, 12%, 87%), hsl(353, 73%, 48%));
+	border-radius: 9px;
+	border-style: solid;
+	height: 16px;
+	width: 100%;
+}
+
+#lengthslider::-webkit-slider-thumb {
+	appearance: none;
+	background-color: rgb(29, 54, 36);
+	border-radius: 50%;
+	height: 16px;
+	width: 16px;
+}
+
+#lengthmin {
+	display: inline;
+    font-family: sans-serif;
+}
+
+#lengthmax {
+	display: inline;
+	float: right;
+    font-family: sans-serif;
+}
+
+#complexitycontainer {
+	left: 50%;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+	position: relative;
+	transform: translate(-50%, 0);
+	width: 20vw;
+}
+
+#complexityheader {
+    font-family: sans-serif;
+}
+
+#complexityslider {
+	appearance: none;
+	background-image: linear-gradient(270deg, hsl(353, 12%, 87%), hsl(353, 73%, 48%));
+	border-radius: 9px;
+	border-style: solid;
+	height: 16px;
+	width: 100%;
+}
+
+#complexityslider::-webkit-slider-thumb {
+	appearance: none;
+	background-color: rgb(29, 54, 36);
+	border-radius: 50%;
+	height: 16px;
+	width: 16px;
+}
+
+#complexitymarkers {
+	text-align: center;
+}
+
+#complexitymin {
+	float: left;
+    font-family: sans-serif;
+}
+
+#complexitymedium {
+	display: inline;
+    font-family: sans-serif;
+}
+
+#complexitymax {
+	float: right;
+    font-family: sans-serif;
+}
+
+#submitbutton {
+	background-color: rgb(231, 237, 230);
+	border: 1px solid;
+	border-radius: 10px;
+	font-size: 3vw;
+	height: 10vh;
+	left: 50%;
+	margin-bottom: 5vh;
+	position: relative;
+	transform: translate(-50%, 0);
+	width: 20vw;
+}
+
+#outputbox {
+	border-left-style: solid;
+	border-left-width: 2px;
+}
+
+#outputsubtitle {
+    font-family: sans-serif;
+	font-size: max(5vh, 16px);
+	text-align: center;
+}
+
+#outputtext {
+	font-family: sans-serif;
+	position: relative;
+	text-align: center;
+	top: 40%;
+	transform: translate(0, -40%);
+}
+
+#homelink {
+	bottom: 1vh;
+	position: fixed;
+	right: 1vw;
+}
+
+#homeicon {
+	height: 10vh;
+}

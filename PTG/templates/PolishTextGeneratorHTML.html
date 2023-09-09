@@ -1,0 +1,88 @@
+<!--
+	-------------------------------------------
+	PTG/templates/PolishTextGeneratorHTML.html
+	Derek Stephens
+	2023 September 9
+	-------------------------------------------
+
+	Generates Polish-looking text with a given length and complexity.
+
+-->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>The Derek Projects</title>
+	<link rel="icon" href="{% static 'ptg_favicon.png' %}">
+	<link rel="stylesheet" href="{% static 'PolishTextGeneratorCSS.css' %}">
+</head>
+
+<body>
+	{% csrf_token %}
+	<div id="title">
+		<img class="titleicon">
+		<div id="titletext">
+			Polish Text Generator
+		</div>
+		<img class="titleicon">
+	</div>
+	<div id="description">
+		Generate your own Polish nonsense using this amazing tool!
+	</div>
+	<!-- The body of the page is split into two columns: configuration and output -->
+	<div id="generationgrid">
+		<div id="configurationbox">
+			<div id="configurationsubtitle">
+				Parameters
+			</div>
+			<div id="lengthcontainer">
+				<div id="lengthheader">
+					Length
+				</div>
+				<input id="lengthslider" type="range" min="1" max="50">
+				<div id="lengthmin">
+				</div>
+				<div id="lengthmax">
+				</div>
+			</div>
+			<div id="complexitycontainer">
+				<div id="complexityheader">
+					Complexity
+				</div>
+				<!-- Increase flexibility of text complexity -->
+				<input id="complexityslider" type="range" min="1" max="3">
+				<div id="complexitymarkers">
+					<div id="complexitymin">
+					</div>
+					<div id="complexitymedium">
+					</div>
+					<div id="complexitymax">
+					</div>
+				</div>
+			</div>
+			<button id="submitbutton">
+				Generate!
+			</button>
+		</div>
+		<div id="outputbox">
+			<div id="outputsubtitle">
+				Output
+			</div>
+			<div id="outputtext">
+			</div>
+		</div>
+	</div>
+	<a id="homelink" href="/">
+		<img id="homeicon" src="{% static 'ptg_home_icon.png' %}">
+	</a>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="{% static 'PolishTextGeneratorJS.js' %}"></script>
+</body>
+
+</html>

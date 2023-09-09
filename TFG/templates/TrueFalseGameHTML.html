@@ -1,0 +1,53 @@
+<!--
+	-------------------------------------------
+	TFG/templates/TrueFalseGameHTML.html
+	Derek Stephens
+	2023 September 9
+	-------------------------------------------
+
+	Challenges the user to correctly guess the truth value of a given prompt.
+
+-->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>The Derek Projects</title>
+	<link rel="icon" href="{% static 'tfg_favicon.png' %}">
+	<link rel="stylesheet" href="{% static 'TrueFalseGameCSS.css' %}">
+</head>
+
+<body>
+	{% csrf_token %}
+	<div id="header">
+		<div id="scorecontainer">
+			<div id="score">
+			</div>
+		</div>
+		<div id="challengemode">
+		</div>
+	</div>
+	<div id="promptdiv">
+	</div>
+	<div id="optionscontainer">
+		<button class="optionbutton" id="truebutton">
+			True
+		</button>
+		<button class="optionbutton" id="falsebutton">
+			False
+		</button>
+	</div>
+	<a id="homelink" href="/">
+		<img id="homeicon" src="{% static 'tfg_home_icon.png' %}">
+	</a>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="{% static 'TrueFalseGameJS.js' %}"></script>
+</body>
+
+</html>

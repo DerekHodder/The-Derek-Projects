@@ -1,0 +1,49 @@
+<!--
+	-------------------------------------------
+	WAR/templates/WarHTML.html
+	Derek Stephens
+	2023 September 9
+	-------------------------------------------
+
+	Green and red pixels duke it out on a square board.
+
+-->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>The Derek Projects</title>
+	<link rel="icon" href="{% static 'war_favicon.png' %}">
+	<link rel="stylesheet" href="{% static 'WarCSS.css' %}">
+</head>
+
+<body>
+	{% csrf_token %}
+	<div id="title">
+		War
+	</div>
+	<input id="speedslider" type="range" min="0" max="9" value="4">
+	<div id="speedlabel">
+		1x Speed
+	</div>
+	<div id="battlegrid">
+	</div>
+	<button id="fightbutton">
+		Fight!
+	</button>
+	<div id="victorylabel">
+	</div>
+	<a id="homelink" href="/">
+		<img id="homeicon" src="{% static 'war_home_icon.png' %}">
+	</a>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="{% static 'WarJS.js' %}"></script>
+</body>
+
+</html>
